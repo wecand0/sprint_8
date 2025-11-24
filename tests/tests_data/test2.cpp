@@ -9,14 +9,14 @@ public:
 
 class Derived : public Base {
 public:
-    void func() {}  // Переопределен без override
+    void func() {}       // Переопределен без override
     void func(int a) {}  // Переопределен без override
-    ~Derived() {}  // Деструктор без override
+    ~Derived() {}        // Деструктор без override
 };
 
 class SubDerived : public Derived {
 public:
-    void func() {}  // Переопределен без override
+    void func() {}       // Переопределен без override
     void func(int a) {}  // Переопределен без override
 };
 
