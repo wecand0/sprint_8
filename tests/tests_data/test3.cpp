@@ -1,6 +1,6 @@
-#include <vector>
-#include <string>
 #include <iostream>
+#include <string>
+#include <vector>
 
 struct CustomType {
     int id;
@@ -32,7 +32,7 @@ void process() {
     }
 
     // Уже с &
-    for (const auto& x : vec) {
+    for (const auto &x : vec) {
         std::cout << x.id;
     }
 }

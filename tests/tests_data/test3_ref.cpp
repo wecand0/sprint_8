@@ -1,6 +1,6 @@
-#include <vector>
-#include <string>
 #include <iostream>
+#include <string>
+#include <vector>
 
 struct CustomType {
     int id;
@@ -11,17 +11,17 @@ void process() {
     std::vector<CustomType> vec = {{1, "a"}, {2, "b"}};
 
     // const auto без &
-    for (const auto& x : vec) {
+    for (const auto &x : vec) {
         std::cout << x.id;
     }
 
     // const явный тип без &
-    for (const CustomType& x : vec) {
+    for (const CustomType &x : vec) {
         std::cout << x.id;
     }
 
     // const decltype без &
-    for (const decltype(vec)::value_type& x : vec) {
+    for (const decltype(vec)::value_type &x : vec) {
         std::cout << x.id;
     }
 
@@ -32,7 +32,7 @@ void process() {
     }
 
     // Уже с &
-    for (const auto& x : vec) {
+    for (const auto &x : vec) {
         std::cout << x.id;
     }
 }

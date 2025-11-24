@@ -10,7 +10,7 @@ class DerivedFromNoDtor : public BaseNoDtor {};
 
 class BaseNonVirtual {  // Невиртуальный деструктор
 public:
-    ~BaseNonVirtual() {}  //Убедимся что один раз virtual
+    ~BaseNonVirtual() {}  // Убедимся что один раз virtual
 };
 
 class DerivedFromNonVirtual : public BaseNonVirtual {};
